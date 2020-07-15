@@ -1,0 +1,567 @@
+@font-face {
+    font-family: "Helvetica Neue Cyr - Thin";
+    src: url(../fonts/helvetica-thin.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: "Helvetica Neue Cyr - Roman";
+    src: url(../fonts/helvetica-roman.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: "Helvetica Neue Cyr";
+    src: url(../fonts/helvetica.otf);
+}
+body {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    padding: 32px calc(113/1366*100vw) calc(113/1366*100vw) calc(113/1366*100vw);
+    background: url(../images/bottom-left.svg);
+    background-position-y: bottom;
+    background-position-x: left;
+    background-repeat: no-repeat;
+
+    // .header__top
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .header__logo
+
+    &__logo {
+        width: 229px;
+        // .header__logo_image
+
+        &_image {
+            width: 229px;
+            height: 52px;
+            margin-bottom: 6px;
+            background: url(../images/logo.svg);
+        }
+
+        // .header__logo_text
+
+        &_text {
+            height: 10px;
+            color: #898989;
+            font-family: "Helvetica Neue Cyr - Thin";
+            font-size: 11px;
+            font-weight: 400;
+            /* Text style for "к, линика" */
+            letter-spacing: 0.87px;
+            float: right;
+        }
+    }
+
+    // .header__nav
+
+    &__nav {
+
+        // .header__nav_list
+
+        &_list {
+            display: flex;
+            width: calc(529/1366*100vw);
+            justify-content: space-between;
+        }
+
+        // .header__nav_item
+
+        &_item {
+            color: #363636;
+            font-family: "Helvetica Neue Cyr - Thin";
+            font-size: 14px;
+            font-weight: 400;
+            /* Text style for "О клинике" */
+            letter-spacing: 0.42px;
+        }
+
+        // .header__nav_item-active
+
+        &_item-active {
+            border-bottom: 2px solid #78b660;
+        }
+
+        // .header__nav_item-drop
+
+        &_item-drop {
+            display: flex;
+            align-items: center;
+        }
+
+        &_link {
+            transition: 0.4s;
+        }
+
+        &_link:hover {
+            color: #78b660;
+        }
+
+        // .header__nav_item_main
+
+        &_item_main {
+            color: #363636;
+            font-family: "Helvetica Neue Cyr - Thin";
+            font-size: 14px;
+            font-weight: 400;
+            /* Text style for "О клинике" */
+            letter-spacing: 0.42px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        &_item_main:hover {
+            color: #78b660;
+        }
+
+        // .header__nav_item_delta
+
+        &_item_delta {
+            width: 6px;
+            height: 3px;
+            background: url(../images/delta.svg);
+            margin-left: 6px;
+            cursor: pointer;
+        }
+    }
+
+    // .header__recall
+
+    &__recall {
+        width: 151px;
+        // .header__recall-title
+
+        &_title {
+            height: 12px;
+            color: #363636;
+            font-family: "Helvetica Neue Cyr - Roman";
+            font-size: 14px;
+            font-weight: 400;
+            float: right;
+            margin-bottom: 11px;
+        }
+
+        // .header__recall_number
+
+        &_number {
+            color: #363636;
+            font-family: "Helvetica Neue Cyr - Thin";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+    }
+
+    
+
+    // .header__middle
+
+    &__middle {
+        width: calc(1060/1366*100vw);
+        padding: 51px calc(14/1366*100vw) 0 calc(65/1366*100vw) ;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .header__middle-left
+
+    &__middle-left {
+        margin-top: 81px;
+    }
+
+    // .header__stock
+
+    &__stock {
+        widows: calc(433/1366*100vw);
+        display: flex;
+        align-items: center;
+    }
+
+    .stock {
+
+        // .stock__left
+
+        &__left {
+            width: 26px;
+            height: 119px;
+            background: url(../images/duga-left.svg);
+        }
+
+        // .stock__middle
+
+        &__middle {
+            margin-left: 16px;
+            margin-right: 4px;
+        }
+
+        // .stock__title
+
+        &__title {
+            color: #363636;
+            font-family: "Helvetica Neue Cyr";
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        // .stock__text
+
+        &__text {
+            color: #363636;
+            font-family: "Helvetica Neue Cyr - Thin";
+            font-size: 23px;
+            font-weight: 400;
+        }
+
+        &__text-bottom {
+            position: relative;
+            bottom: 22px;
+        }
+
+        // .stock__number
+
+        &__number {
+            position: relative;
+            top: 22px;
+            margin-left: 13px;
+            color: #78b660;
+            font-family: "Helvetica Neue Cyr";
+            font-size: 52px;
+            font-weight: 700;
+        }
+
+        // .stock__right
+
+        &__right {
+            width: 26px;
+            height: 119px;
+            background: url(../images/duga-right.svg);
+        }
+    }
+    // .header__circles
+
+    &__circles {
+        width: 57px;
+        margin-left: 4px;
+        margin-top: 198px;
+        margin-bottom: 7px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .header__circle
+
+    &__circle {
+        cursor: pointer;
+        width: 13px;
+        height: 13px;
+        border-radius: 100%;
+        background-color: rgba($color: #363636, $alpha: 0.1);
+        transition: 0.3s;
+    }
+
+    // .header__circle-active
+
+    &__circle-active {
+        background-color: rgba($color: #7db52c, $alpha: 0.67) 
+    }
+
+    // .header__girl
+
+    &__girl {
+        width: 448px;
+        height: 400px;
+        background: url(../images/girl.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.5s;
+    }
+
+    // .header__bottom
+
+    &__bottom {
+        width: calc(1060/1366*100vw);
+        padding-top: 104px;
+        padding-left: 40px;
+        padding-right: 39px;
+        text-align: center;
+    }
+
+    // .header__botoom-top
+
+    &__bottom-top {
+        color: #363636;
+        font-family: "Helvetica Neue Cyr - Thin";
+        font-size: 30px;
+        font-weight: 400;
+        /* Text style for "Здравствуй" */
+        line-height: 20px;
+        /* Text style for "профессион" */
+        line-height: 26px;
+    }
+
+    // .header__botoom-bottom
+
+    &__bottom-bottom {
+        margin-top: 32px;
+        color: #363636;
+        font-family: "Helvetica Neue Cyr - Thin";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        /* Text style for "," */
+        letter-spacing: 0.7px;
+    }
+
+}
+
+//Далее дополнительный контент
+
+.drop-down_menu {
+        display: none;
+        position: absolute;
+        margin-top: 5px;
+
+		// .drop-down_menu__main
+
+		&__main {
+            height: 215px;
+            width: 250px;
+            box-sizing: border-box;
+            padding-top: 25px;
+            background: url(../images/down-main.png);
+			// .drop-down_menu__main_list
+
+			&_list {
+                color: #363636;
+                font-family: "Helvetica Neue Cyr";
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 26px;
+			}
+
+			// .drop-down_menu__main_item
+
+			&_item {
+                padding-left: 21px;
+                cursor: pointer;
+            }
+            
+            &_item:hover {
+                background: url(../images/arrow.svg), #f2f2f2;
+                background-repeat: no-repeat;
+                background-position-y: center;
+                background-position-x: 225px;
+            }
+		}
+
+		// .drop-down_menu__add
+
+		&__add {
+            display: none;
+            position: relative;
+            top: 10px;
+            background: rgba($color: #f2f2f2, $alpha: 0.9);
+            height: 205px;
+            width: 250px;
+            box-sizing: border-box;
+            padding-top: 15px;
+            transition: 0.5s;
+			// .drop-down_menu__add_list
+
+			&_list {
+                color: #363636;
+                font-family: "Helvetica Neue Cyr";
+                font-size: 12px;
+                font-weight: 300;
+                line-height: 26px;
+			}
+
+			// .drop-down_menu__add_item
+
+			&_item {
+                margin-left: 22px;
+                display: inline-block;
+                cursor: pointer;
+            }
+            
+            &_item:hover {
+                border-bottom: 2px solid #78b660;
+            }
+		}
+}
+
+
+    .top-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: calc(138/1366*100vw);
+        height: calc(222/1366*100vw);
+        background: url(../images/top-right.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .gradient {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 327px;
+        background-image: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        opacity: 0.05;
+        background-size: cover;
+    }
+
+    .flower {
+        z-index: -1;
+        position: absolute;
+        top: calc(284/1366*100vw);
+        left: calc(85/1366*100vw);
+        width: calc(710/1366*100vw);
+        height: calc(596/1366*100vw);
+        background: url(../images/flower.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .bottom-left {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(186/1366*100vw);
+        height: calc(290/1366*100vw);
+        background: url(../images/bottom-left.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+@media (max-width: 1200px) {
+   
+    .header__top {
+        display: block;   
+        justify-content: center;
+    }
+
+    .header__logo {
+        width: 229px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .header__logo_text {
+        transform: scale(1.3,1.3);  
+    }
+
+    .header__nav_list {
+        display: block;
+        width: 200px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .header__nav_item {
+        margin-bottom: 15px;
+        transform: scale(1.3,1.3);
+    }
+
+    .header__nav_item-active {
+        border: none;
+    }
+
+    .header__nav_item-drop {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__recall {
+        margin: 0 auto;
+        margin-top: 40px;
+    }    
+
+    .header__middle {
+        display: block;
+        text-align: center;
+    }
+
+    .header__middle-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;  
+    }
+
+    .header__stock {
+        margin: 0 auto;
+        transform: scale(0.7,0.7);
+    }
+
+    .stock__left {
+        transform: scale(1.6) !important;
+        background-size: contain !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    .stock__right {
+        transform: scale(1.6) !important;
+        background-size: contain !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .stock__text-bottom {
+        position: static !important;
+    }
+
+    .stock__number {
+        position: static !important;
+    }
+
+    .header__circles {
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .header__girl {
+        width: unset;
+    }
+
+    .header__bottom {
+        padding-left: 0;
+    }
+
+    .header__bottom-top {
+        flex-wrap: wrap;
+    }
+
+    .header__bottom-bottom {
+        flex-wrap: wrap;
+    }
+
+    .header__nav_item_delta {
+        display: none;
+    }
+}

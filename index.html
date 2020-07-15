@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/logo.png">
+    <title>COLAEES</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="//db.onlinewebfonts.com/c/05e3738cb717a3ec76df1fa726367746?family=HelveticaNeueCyr" rel="stylesheet" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__logo">
+                <div class="header__logo_image"></div>
+                <div class="header__logo_text">клиника медицинской косметологии</div>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav_list">
+                    <li class="header__nav_item">
+                        <a class="header__nav_link" href="#">О клинике</a>
+                    </li>
+                    <li class="header__nav_item header__nav_item-active">
+                        <a class="header__nav_link" href="#">Что мы лечим</a>
+                    </li>
+                    <li class="header__nav_item">
+                        <div class="header__nav_item-drop">
+                            <div class="header__nav_item_main" onclick="drop()">Услуги</div>
+                            <div class="header__nav_item_delta" onclick="drop()"></div>
+                        </div>
+                        <div class="drop-down_menu">
+                            <div class="drop-down_menu__main">
+                                <ul class="drop-down_menu__main_list">
+                                    <li class="drop-down_menu__main_item drop-down_menu__main_item-1" onclick="show_add_1()">Дерматология</li>
+                                    <li class="drop-down_menu__main_item drop-down_menu__main_item-2" onclick="show_add_2()">Дерматоонкология</li>
+                                    <li class="drop-down_menu__main_item drop-down_menu__main_item-3" onclick="show_add_3()">Медицинская косметология</li>
+                                    <li class="drop-down_menu__main_item drop-down_menu__main_item-4" onclick="show_add_4()">Венерология</li>
+                                    <li class="drop-down_menu__main_item drop-down_menu__main_item-5" onclick="show_add_5()">Трихология</li>
+                                    <li class="drop-down_menu__main_item drop-down_menu__main_item-6" onclick="show_add_6()">Онихология</li>
+                                    <li class="drop-down_menu__main_item drop-down_menu__main_item-7" onclick="show_add_7()">Урология</li>
+                                </ul>
+                            </div>
+                            <div class="drop-down_menu__add drop-down_menu__add-2">
+                                <ul class="drop-down_menu__add_list">
+                                    <li class="drop-down_menu__add_item">Гемангиома лечение</li>
+                                    <li class="drop-down_menu__add_item">Лечение базалиом</li>
+                                    <li class="drop-down_menu__add_item">Диагностика меланом</li>
+                                    <li class="drop-down_menu__add_item">Лечение ксантелазм (ксантом)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__nav_item">
+                        <a class="header__nav_link" href="#">Цены на услуги</a>
+                    </li>
+                    <li class="header__nav_item">
+                        <a class="header__nav_link" href="#">Доктора</a>
+                    </li>
+                    <li class="header__nav_item">
+                        <a class="header__nav_link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__recall">
+                <div class="header__recall_title">Свяжитесь с нами:</div>
+                <div class="header__recall_number">
+                    <a class="look" href="tel:+380 67 580 05 37">+380 67 580 05 37</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__middle">
+            <div class="header__middle-left">
+                <div class="header__stock">
+                    <div class="stock__left"></div>
+                    <div class="stock__middle">
+                        <div class="stock__title">Удаление папилом</div>
+                        <div class="stock__text stock__text-top">оплати единоразово 7 процедур —</div>
+                        <div class="stock__text stock__text-bottom">
+                            получи скидку
+                            <span class="stock__number">50%</span>
+                        </div>
+                            
+                        
+                    </div>
+                    <div class="stock__right"></div>
+                </div>
+                <div class="header__circles">
+                    <div class="header__circle header__circle-1" onclick="slider_1()"></div>
+                    <div class="header__circle header__circle-2 header__circle-active" onclick="slider_2()"></div>
+                    <div class="header__circle header__circle-3" onclick="slider_3()"></div>
+                </div>
+            </div>
+            <div class="header__girl"></div>
+        </div>
+        <div class="header__bottom">
+            <div class="header__bottom-top">Здравствуйте, ищите профессиональный подход?</div>
+            <div class="header__bottom-bottom">Если вам 20-30-40-50-60-70 и вы ищите ответы на вопросы, как прекрасно выглядеть и 
+                уверенно себя чувствовать — значит вы попали по адресу!<br>
+                Вы на сайте центра медицинской косметологии , который готов стать вашим проводником в мире эстетической медицины.<br> 
+                В рамках этого сайта можно найти интересные статьи, описание популярных медико-эстетических процедур, показания и 
+                противопоказания к ним, их обсуждение среди пользователей; 
+                получить профессиональный совет или ответ на ваш вопрос.
+            </div>
+        </div>
+
+    
+
+        <div class="top-right"></div>
+        <div class="flower"></div>
+        <div class="gradient"></div>
+
+    </header>
+        
+    <script type = "text/javascript" src="../scripts/main.js"></script>
+</body>
+</html>
